@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: calc(100% - 8%);
+	margin: 2% auto;
+	font-family: Ubuntu;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	width: calc(100% - 8%);
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	z-index: 10;
+}
+
+.right button>img {
+	width: 30px;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.main {
+	width: calc(100% - 40%);
+	margin: 8% auto;
+	display: flex;
+	justify-content: center;
+	gap: 2.5rem;
+}
+
+.image>img {
+	width: 444px;
+	height: 444px;
+	box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.15);
+}
+
+.details-content {
+	line-height: 1.65;
+	letter-spacing: 0.1em;
+}
+
+.details {
+	margin-top: 10rem;
+}
+
+.copyright {
+	position: relative;
+	right: -380px;
+	top: 100px;
+	font-size: 14px;
+	font-weight: bolder;
+	font-family: Ubuntu;
+}
+
+aside {
+	position: fixed;
+	top: 50%;
+	right: 6rem;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+aside>p {
+	transform: rotate(90deg);
+}
+
+aside>.line {
+	width: 1px;
+	height: 200px;
+	margin-bottom: 0.65rem;
+	background-color: black;
+}
+
+footer {
+	width: 100%;
+}
+
+.video {
+	position: relative;
+	margin: 0 auto;
+	width: 1240px;
+	height: 700px;
+}
+
+.video .logo {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.video>img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.morelink {
+	color: black;
+	text-decoration: solid underline skyblue 2px;
+}
+
+.morelink:hover {
+	text-decoration-thickness: 3px;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: #fff;
+	z-index: 10;
+	overflow-y: hidden;
+	white-space: nowrap;
+	transform: translateY(-100%);
+	transition: all 0.5s ease-out;
+}
+
+#overlay nav {
+	height: 150px;
+	width: 100%;
+	z-index: 10;
+	display: flex;
+	padding: 0 50px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#overlay .left>img {
+	width: 250px;
+}
+
+#overlay button>img {
+	width: 25px;
+}
+
+#overlay>ul {
+	list-style-type: none;
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#overlay>ul li a {
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 2rem;
+	line-height: 1.9;
+	color: #000;
+	transition: all 0.2s ease-in-out;
+}
+
+#overlay>ul li a:hover {
+	color: #C2FF01;
+	letter-spacing: 3px;
+}
+
+button.btn-close {
+	border: none;
+	background-color: transparent;
+}
+
+#overlay>.left>img,
+#overlay>.right>img {
+	width: 100px;
+}

@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/*font-family: Ubuntu;*/
+}
+
+.primary-bg {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)), url(https://lv2-cdn.azureedge.net/nmixx/b2f4786a63fe4779bf455207b7b41520-%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4%20PC.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.container>nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+
+.left a>img {
+	width: 250px;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.right button>img {
+	width: 30px;
+}
+
+.container>a {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+}
+
+.container>a img {
+	width: 90px;
+	height: 90px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.container>a img:hover {
+	transform: scale(0.75);
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: #fff;
+	z-index: 10;
+	overflow-y: hidden;
+	white-space: nowrap;
+	transform: translateY(-100%);
+	transition: all 0.5s ease-out;
+}
+
+#overlay nav {
+	height: 150px;
+	width: 100%;
+	z-index: 10;
+	display: flex;
+	padding: 0 50px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#overlay .left>img {
+	width: 250px;
+}
+
+#overlay button>img {
+	width: 25px;
+}
+
+#overlay>ul {
+	list-style-type: none;
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#overlay>ul li a {
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 2rem;
+	line-height: 1.9;
+	color: #000;
+	transition: all 0.2s ease-in-out;
+}
+
+#overlay>ul li a:hover {
+	color: #C2FF01;
+	letter-spacing: 3px;
+}
+
+button.btn-close {
+	border: none;
+	background-color: transparent;
+}
+
+#overlay>.left>img,
+#overlay>.right>img {
+	width: 100px;
+}
+
+.main-content {
+	position: absolute;
+	top: 13rem;
+	right: 5rem;
+}
+
+.main-content>div a {
+	text-decoration: none;
+	display: block;
+	color: white;
+	text-align: right;
+	line-height: 1.85;
+}
+
+.dice {
+	padding-bottom: 50px;
+	border-bottom: 0.5px solid #fff;
+}
+
+footer .navigation {
+	position: absolute;
+	bottom: 2rem;
+	left: 4rem;
+}
+
+footer .navigation>a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	width: 50px;
+	padding: 0 0.5rem;
+	margin-bottom: 1.5rem;
+	transition: transform 0.5s ease-out;
+}
+
+footer .navigation a {
+	color: black;
+}
+
+.navigation>a img {
+	width: 20px;
+}
+
+footer .navigation>a:hover {
+	transform: translateX(20px);
+}
+
+.copyright {
+	position: absolute;
+	bottom: 2rem;
+	right: 4rem;
+	font-weight: bolder;
+	font-family: Ubuntu;
+}
+
+.main-content {
+	animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(200px);
+		-moz-transform: translateX(200px);
+		-ms-transform: translateX(200px);
+		-o-transform: translateX(200px);
+		transform: translateX(200px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+}

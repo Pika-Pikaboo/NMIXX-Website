@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>NMIXX</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<section class="primary-bg">
+			<section class="container">
+				<nav>
+					<div class="left">
+						<a href="#"><img src="https://lv2-cdn.azureedge.net/nmixx/f7aac42fde4c459b898f84841dbe0d73-%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80(%EB%A9%94%EC%9D%B8%EB%A1%9C%EA%B3%A0).png" alt="logo"></a>
+					</div>
+					<div class="right">
+						<button type="button" id="open-btn"><img src="Images/menu.png" alt="menu"></button>
+					</div>
+				</nav>
+				<a href="https://www.youtube.com/watch?v=p1bjnyDqI9k" target="_blank">
+					<img src="https://lv2-cdn.azureedge.net/system/PLAY.png" alt="play button">
+				</a>
+				<section class="main-content">
+					<div><a href="#entwurf" style="font-size:4.5rem;font-weight:bolder;">ENTWURF</a></div>
+					<div class="dice"><a href="#" style="font-size:2rem;">DICE</a></div>
+					<div><a href="#" style="margin-top: 2rem;font-size:1.25rem; font-weight:bold;">NOTICE </a></div>
+					<div><a href="#" style="font-size:1.25rem; font-weight:bold;">NMIXX "DICE" M/V</a></div>
+				</section>
+				<footer>
+					<nav class="navigation">
+						<a href="#"><img src="Images/insta.png" alt="instagram"></a>
+						<a href="#"><img src="Images/twitter.png" alt="twitter"></a>
+						<a href="#"><img src="Images/facebook.png" alt="facebook"></a>
+						<a href="#"><img src="Images/youtube.png" alt="youtube"></a>
+						<a href="#"><img src="Images/tiktok.png" alt="tiktok"></a>
+						<a href="#"><img src="Images/fans.png" alt="fans"></a>
+						<a href="#"><img src="Images/vlive.png" alt="vlive"></a>
+						<a href="#"><img src="Images/weibo.png" alt="weibo"></a>
+						<a href="#"><img src="Images/EDM.png" alt="edm"></a>
+					</nav>
+				</footer>
+			</section>
+		</section>
+		<section id="overlay">
+			<nav>
+				<div class="left">
+					<a href="#">
+						<img src="https://lv2-cdn.azureedge.net/nmixx/3778191f12e643f8a9ca9bba1f6a431c-%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80(%EC%BB%AC%EB%9F%AC%EB%A1%9C%EA%B3%A0).png" alt="nmixx">
+					</a>
+				</div>
+				<div class="right">
+					<button type="button" id="close-btn"><img src="Images/close.png" alt="close"></button>
+				</div>
+			</nav>
+			<ul>
+				<li><a href="./Profile.html">PROFILE</a></li>
+				<li><a href="./discography.html">DISCOGRAPHY</a></li>
+				<li><a href="#">GALLERY</a></li>
+				<li><a href="#">VIDEO</a></li>
+				<li><a href="#">NOTICE</a></li>
+				<li><a href="#">SCHEDULE</a></li>
+			</ul>
+			<div class="copyright">
+				Copyright &copy; <span style="color: dodgerblue;">JYP</span> ENTERTAINMENT Co., Ltd. All rights reserved.
+			</div>
+		</section>
+		<script>
+		const open = document.getElementById("open-btn");
+		const close = document.getElementById("close-btn");
+		const overlay = document.getElementById("overlay");
+		open.addEventListener('click', () => {
+			overlay.style.transform = "translateY(0%)";
+			overlay.style.height = "100%";
+		});
+		close.addEventListener('click', () => {
+			overlay.style.transform = "translateY(-100%)";
+			overlay.style.height = "0";
+		});
+
+		</script>
+	</body>
+
+</html>
